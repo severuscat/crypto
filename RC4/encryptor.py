@@ -81,7 +81,10 @@ def test():
         a = ord(c)
         enc = encoder.encode(a)
         dec = decoder.decode(enc)
-        print(c, chr(enc), chr(dec))
+        print('msg:', c,
+              'encr:', chr(enc),
+              'decr:', chr(dec))
+        assert c == chr(dec)
 
 
 if __name__ == '__main__':
