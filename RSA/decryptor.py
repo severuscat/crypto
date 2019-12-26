@@ -15,5 +15,6 @@ def test():
               "\ndecrypted:", decrypt(encrypt(message)), "\n")
         assert decrypt(encrypt(message)) == message
 
+
 if __name__ == '__main__':
     test()
